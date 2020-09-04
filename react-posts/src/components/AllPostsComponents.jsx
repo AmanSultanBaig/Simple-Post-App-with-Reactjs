@@ -47,9 +47,7 @@ class AllPostComponent extends Component {
             <div>
                 <a className="btn btn-dark float-right" href="/create-post">+ Add Post</a>
                 <div className="row mt-5">
-                    {
-                        this.UiGenerate()
-                    }
+                    {this.UiGenerate()}
                 </div>
             </div>
         )

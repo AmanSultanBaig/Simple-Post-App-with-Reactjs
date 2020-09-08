@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import AllPostComponent from '../AllPostsComponents'
 import CreatePostComponent from '../CreatePostComponent'
+import ViewPost from '../ViewPost';
 
 function HeaderComponent() {
     return (
@@ -18,6 +19,7 @@ function HeaderComponent() {
                 <Route path="/" exact component={AllPostComponent} />
                 <Route path="/all-posts" exact component={AllPostComponent} />
                 <Route path="/create-post" component={CreatePostComponent} />
+                <Route path="/view-post/:postId" component={ViewPost} />
             </div>
         </Router>
     );

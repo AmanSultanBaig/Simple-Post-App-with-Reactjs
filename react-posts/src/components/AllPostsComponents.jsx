@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import {Link} from 'react-router-dom'
 
 import axios from 'axios'
 
@@ -10,7 +11,7 @@ const Card = props =>
                 <div className="card-body">
                     <h5 className="card-title">{props.value.title}</h5>
                     <p className="card-text">{props.value.body}</p>
-                    <a href="/" className="float-right btn btn-dark">Go somewhere</a>
+                    <Link className="float-right btn btn-dark" to={'view-post/'+props.value.id}>Go somewhere</Link>
                 </div>
             </div>
         </div>

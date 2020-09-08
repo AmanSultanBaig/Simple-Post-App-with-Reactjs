@@ -27,11 +27,15 @@ class ViewPost extends Component {
 
     render() {
         return (
-            // <h1>aaa</h1>
             <div className="container">
                 <div className="row">
                     <h3 className="mt-3">{this.state.onePost.title}</h3>
-                    <p className="mt-1 w-75">{this.state.onePost.body}</p>
+                    <div className="col-md-10">
+                        <p className="mt-1">{this.state.onePost.body}</p>
+                    </div>
+                    <div className="col-md-2">
+                        <button className="btn btn-dark btn-sm">Delete Post</button>
+                    </div>
                 </div>
             </div>
         )
